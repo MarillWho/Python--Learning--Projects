@@ -1,0 +1,8 @@
+words = ["gidle", "bibi", "eaj", "ace", "ailee", "akmu", "alys", "asel", "amber", "aoa", "apink", "ashley", "astro", "ateez", "bap", "bi", "baekhyun", "beast", "bambam", "jiselle", "moon", "bigbang","bigstar", "bigstar", "wheein", "blackpink", "bm", "boa",
+         "beenzino", "brix", "yelloasis", "bronze", "meenoi", "btob", "cafune", "chancellor","changmo", "cheetah", "cheetah", "chungha", "cl", "clc", "cnblue", "colde", "coldin", "croosh", "crush", "dabin", "dalshabet", "dalsooobin",
+         "davichi", "dawn", "daybreak", "lucy", "dean", "dosii", "dpr", "dreamcatcher","eaj", "keshi", "seori", "eden", "eill", "elo", "enhypen", "exid", "exo", "fiestar", "gaeko", "gaho", "kave", "gemini", "golden", "gray", "gugudan",
+         "gummy", "haer", "heize", "hellovenus", "henry", "iu", "highlight", "hinapia", "history", "holland", "hoody", "hoshi", "huta", "hwasa", "hyolyn", "hyomin", "hyukoh", "ioi", "ikon", "infinite", "irene", "seulgi", "izone", "jamie",
+         "jannabi", "jawny", "jannabi", "jbj", "jea", "jessi", "jinho", "hui", "kino", "jinsoul", "jinu", "jiyeon", "joji", "jonghyun", "juniel", "junggigo", "junny", "kard", "kai", "kara", "kard", "katie", "keembo", "key", "kuro",
+         "laboum", "leo", "loco", "loren", "luna", "mamamoo", "milli", "minho", "minseo", "minzy", "monsune", "moonbyul", "moonbin", "sanha", "newjeans", "oneus", "onew", "onewe", "pentagon", "pixy", "pristin", "punch", "punchello",
+         "ravi", "rose", "seori", "seventeen", "shinee", "stellar", "sulli", "sunmi", "sunye", "suzy", "taemin", "taeyeon", "ten", "tiffany", "tst", "twice", "txt", "villain", "wheein", "wjsn", "woodz", "woogie", "yena", "yezi", "yooa",
+         "yugyeom"]
