@@ -1,41 +1,71 @@
+import csv
+import sys
+class Logger(object):
+    def __init__(self):
+        self.terminal = sys.stdout
+        self.log = open("logfile.log", "a")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        pass
+sys.stdout = Logger()
+
+# class with function for output sequence
 class MainPart:
-
-    def __init__(self, value: int):
-        self.value = value
-
-    def exception(self, value):
-        value = self
-        try:
-            if value is int and value % 1 == 0:
-                return True
-        except ValueError:
-            print("This is not a whole number, please try again.")
-
-
-def main(self):
-    odd = 0
     even = 0
-    number = []
-    user = self
-    while user > 1:
-        if user % 2 == 0:
-            user = user / 2
-            even = even + 1
-            print(user)
-            number.append(user)
+    odd = 0
+    a = []
 
-        else:
-            user = ((user * 3) + 1)
-            odd = odd + 1
-            print(user)
-            number.append(user)
+    def __init__(self):
+        self.num = input(" Please enter a number: ").split()
+        mark = False
+        while not mark:
+            try:
+                for number in self.num:
+                    if int(number) > 0:
+                        mark = True
+                    else:
+                        print(" That isn't a positive number. Please try again. ")
+                        mark = True
+                        pass
+            except ValueError:
+                print(" That is not an integer. Please try again. ")
+                mark = True
+                pass
+# function for outputting cycles/times ran
+    def main(self):
+        for this in self.num:
+            print(" You have entered: " + this)
+            try:
+                while int(this) > 1:
+                    if int(this) % 2 == 0:
+                        this = int(this) / 2
+                        MainPart.even += 1
+                        MainPart.a.append(this)
 
-    question = input(" Please enter a number greater than 0: ")
+                    else:
+                        this = ((int(this) * 3) + 1)
+                        MainPart.odd += 1
+                        MainPart.a.append(this)
 
-    print(" The odd cycle " + str(odd) + " times.")
-    print(" The even cycle " + str(even) + " times.")
-    print(" The equation " + str((odd + even)) + " times.")
-    print(" The highest integer reached was: " + (str(max(number))))
+                print(MainPart.a)
+                print(" The odd cycle ran " + str(MainPart.odd) + " times.")
+                print(" The even cycle ran " + str(MainPart.even) + " times.")
+                print(" The equation ran " + str((MainPart.odd + MainPart.even)) + " times.")
+                print(" The highest integer reached was: " + (str(max(MainPart.a))))
 
+            except ValueError:
+                continue
 
-main(12)
+# created csv with row for each
+    with open("output_results.csv", "w", newline="") as file:
+        writer = csv.writer(file)
+        rows = [[data] for data in str(a)]
+        writer.writerow(["Odd Cycle", " Even Cycle", " Equation Ran", " Highest Integer"])
+        writer.writerow(rows)
+
+hi = MainPart()
+hi.main()
